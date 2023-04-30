@@ -22,7 +22,6 @@ def bfs(alives_virus, lab, space, N):
             if nr<0 or nc<0 or nr>=N or nc>=N: 
                 continue
             elif (nr,nc) not in visited_skip:
-                # visited.add((nr,nc))  
                 visited_skip.add((nr,nc))
                 if (lab[nr][nc] == 0) or (lab[nr][nc] == 2):
                     q.append((nr,nc,depth+1))
